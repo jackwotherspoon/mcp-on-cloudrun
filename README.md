@@ -10,7 +10,7 @@ need to connect to external tools and resources.
 MCP follows a client-server architecture, and for the longest time only
 supported running the server locally using the `stdio` transport.
 
-![client-server architecture](images/mcp-clientserver.png)
+![client-server architecture](images/mcp-client-server.png)
 
 MCP now supports two additional transports: `sse` and `streamable-http`,
 which can allow you to run the server remotely.
@@ -41,9 +41,10 @@ provides a fast, Pythonic way to build MCP servers and clients.
 
 ### 🪛 Tools
 
-The `add` tool will take two numbers and return their sum.
+The MCP Server has the following two tools:
 
-The `subtract` tool will take two numbers and return their difference.
+* `add`: will take two numbers and return their sum.
+* `subtract`: will take two numbers and return their difference.
 
 
 ## Prerequisites

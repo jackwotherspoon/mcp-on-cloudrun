@@ -10,10 +10,11 @@ need to connect to external tools and resources.
 MCP follows a client-server architecture, and for the longest time only
 supported running the server locally using the `stdio` transport.
 
-![client-server architecture](images/mcp-client-server.png)
+<img src="images/mcp-client-server.png" width="80%" alt="client-server-architecture">
 
 MCP now supports two additional transports: `sse` and `streamable-http`,
-which can allow you to run the server remotely.
+which open the door for running MCP servers remotely. You can read more about
+these transports in the [official MCP docs](https://modelcontextprotocol.io/docs/concepts/architecture#transport-layer).
 
 ## Benefits of running an MCP server remotely
 
@@ -109,7 +110,10 @@ gcloud builds submit --region=us-central1 --tag us-central1-docker.pkg.dev/$PROJ
 Deploy the container image to Cloud Run.
 
 ```bash
-gcloud run deploy mcp-server --no-allow-unauthenticated --region=us-central1 --image us-central1-docker.pkg.dev/$PROJECT_ID/remote-mcp-servers/mcp-server:latest
+gcloud run deploy mcp-server \
+  --image us-central1-docker.pkg.dev/$PROJECT_ID/remote-mcp-servers/mcp-server:latest \
+  --region=us-central1 \
+  --no-allow-unauthenticated
 ```
 
 </details>

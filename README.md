@@ -13,7 +13,7 @@ supported running the server locally using the `stdio` transport.
 <img src="images/mcp-client-server.png" width="80%" alt="client-server-architecture">
 
 MCP now supports two additional transports: `sse` and `streamable-http`,
-which open the door for running MCP servers remotely. You can read more about
+which allow for running MCP servers remotely. You can read more about
 these transports in the [official MCP docs](https://modelcontextprotocol.io/docs/concepts/architecture#transport-layer).
 
 ## Benefits of running an MCP server remotely
@@ -40,12 +40,27 @@ We will use [FastMCP](https://gofastmcp.com/getting-started/welcome) to create
 a simple math MCP server that has two tools: `add` and `subtract`. FastMCP
 provides a fast, Pythonic way to build MCP servers and clients.
 
-### 🪛 Tools
+### 🛠️ Tools
 
-The MCP Server has the following two tools:
+The MCP server has the following two tools:
 
-* `add`: will take two numbers and return their sum.
-* `subtract`: will take two numbers and return their difference.
+The `add` tool will take two numbers and return their sum.
+
+https://github.com/jackwotherspoon/mcp-on-cloudrun/blob/87960732c42f597c60d6d6aba3a2634aa98f4361/server.py#L25-L37
+
+The `subtract` tool will take two numbers and return their difference.
+
+https://github.com/jackwotherspoon/mcp-on-cloudrun/blob/87960732c42f597c60d6d6aba3a2634aa98f4361/server.py#L39-L51
+
+### Transport
+
+We will use the `sse` transport for this example as it is more mature and
+stable, but you can also use `streamable-http`, it was just released!
+
+If you want to use `streamable-http` you will need to update the last line of
+`server.py` to use `transport="streamable-http"`.
+
+https://github.com/jackwotherspoon/mcp-on-cloudrun/blob/87960732c42f597c60d6d6aba3a2634aa98f4361/server.py#L55-L56
 
 
 ## Prerequisites

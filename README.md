@@ -18,16 +18,16 @@ these transports in the [official MCP docs](https://modelcontextprotocol.io/docs
 
 ## Benefits of running an MCP server remotely
 
-Running an MCP server remotely can provide several benefits:
+Running an MCP server remotely on Cloud Run can provide several benefits:
 
-- 📈 **Scalability**: Serverless platforms like Cloud Run will scale your MCP
-server automatically based on demand (pay-per-use).
+- 📈 **Scalability**: Cloud Run is built to rapidly scale out to handle all incoming requests.
+Cloud Run will scale your MCP server automatically based on demand.
 - 👥 **Centralized server**: You can share your MCP server with team members
 in one centralized location and they can connect to it from their local
 machines instead of running their own servers locally. If a change is made to
 the MCP server, all team members will benefit from it.
-- 🔐 **Security**: You can require authentication to connect to your MCP server,
-which can prevent unauthorized access.
+- 🔐 **Security**: Cloud Run provides an easy way to force authenticated requests.
+This allows only secure connections to your MCP server, preventing unauthorized access.
 
 > [!IMPORTANT]
 > The security aspect mentioned above is critical. If you don't enforce
@@ -62,7 +62,6 @@ If you want to use `sse` you will need to update the last line of
 `server.py` to use `transport="sse"`.
 
 https://github.com/jackwotherspoon/mcp-on-cloudrun/blob/87960732c42f597c60d6d6aba3a2634aa98f4361/server.py#L55-L56
-
 
 ## Prerequisites
 

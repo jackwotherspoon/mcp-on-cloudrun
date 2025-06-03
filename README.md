@@ -20,17 +20,17 @@ these transports in the [official MCP docs](https://modelcontextprotocol.io/docs
 
 Running an MCP server remotely can provide several benefits:
 
-- **Scalability**: Serverless platforms like Cloud Run will scale your MCP
+- 📈 **Scalability**: Serverless platforms like Cloud Run will scale your MCP
 server automatically based on demand (pay-per-use).
-- **Centralized server**: You can share your MCP server with team members
+- 👥 **Centralized server**: You can share your MCP server with team members
 in one centralized location and they can connect to it from their local
 machines instead of running their own servers locally. If a change is made to
 the MCP server, all team members will benefit from it.
-- **Security**: You can require authentication to connect to your MCP server,
+- 🔐 **Security**: You can require authentication to connect to your MCP server,
 which can prevent unauthorized access.
 
 > [!IMPORTANT]
-> The security aspect mentioned above is critical. If you don't require
+> The security aspect mentioned above is critical. If you don't enforce
 authentication, anyone on the public internet can potentially access and
 call your MCP server.
 

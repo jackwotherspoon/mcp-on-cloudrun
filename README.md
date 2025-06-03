@@ -54,11 +54,12 @@ https://github.com/jackwotherspoon/mcp-on-cloudrun/blob/87960732c42f597c60d6d6ab
 
 ### Transport
 
-We will use the `sse` transport for this example as it is more mature and
-stable, but you can also use `streamable-http`, it was just released!
+We will use the `streamable-http` transport for this example as it is the
+recommended transport for remote servers as of the [2025-03-26 spec](https://modelcontextprotocol.io/specification/2025-03-26/basic/transports#streamable-http),
+but you can also still use `sse` if you prefer as it is backwards compatible.
 
-If you want to use `streamable-http` you will need to update the last line of
-`server.py` to use `transport="streamable-http"`.
+If you want to use `sse` you will need to update the last line of
+`server.py` to use `transport="sse"`.
 
 https://github.com/jackwotherspoon/mcp-on-cloudrun/blob/87960732c42f597c60d6d6aba3a2634aa98f4361/server.py#L55-L56
 
@@ -182,8 +183,8 @@ our remote MCP server.
 
 Let's test and connect to our remote MCP server using the
 [test_server.py](test_server.py) test script. It uses the FastMCP client to
-connect to `http://127.0.0.1:8080/sse` (note the `/sse` at the end as we
-are using the SSE transport) and call the `add` and `subtract` tools.
+connect to `http://127.0.0.1:8080/mcp` (note the `/mcp` at the end as we
+are using the `streamable-http` transport) and call the `add` and `subtract` tools.
 
 > [!NOTE]
 > Make sure you have the Cloud Run proxy running before running the test server.

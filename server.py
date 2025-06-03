@@ -52,5 +52,5 @@ def subtract(a: int, b: int) -> int:
 
 if __name__ == "__main__":
     logger.info(f"🚀 MCP server started on port {os.getenv('PORT', 8080)}")
-    # Could also use 'streamable-http' transport
-    mcp.run(transport="sse", host="0.0.0.0", port=os.getenv("PORT", 8080))
+    # Could also use 'sse' transport, host="0.0.0.0" required for Cloud Run.
+    mcp.run(transport="streamable-http", host="0.0.0.0", port=os.getenv("PORT", 8080))

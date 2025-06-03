@@ -61,7 +61,7 @@ but you can also still use `sse` if you prefer as it is backwards compatible.
 If you want to use `sse` you will need to update the last line of
 `server.py` to use `transport="sse"`.
 
-https://github.com/jackwotherspoon/mcp-on-cloudrun/blob/87960732c42f597c60d6d6aba3a2634aa98f4361/server.py#L55-L56
+https://github.com/jackwotherspoon/mcp-on-cloudrun/blob/a5a386c8e744cfa9b05eb5f021953a56b33bf79f/server.py#L55-L56
 
 ## Prerequisites
 

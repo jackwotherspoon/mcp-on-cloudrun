@@ -1,4 +1,4 @@
-# ☁️ 🚀 Build and Deploy a remote MCP server to Cloud Run in 5 minutes
+# ☁️ 🚀 Build and Deploy a remote MCP server to Cloud Run in 10 minutes
 
 Anthropic's [Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction)
 is a protocol that helps you connect prompts, resources and tools (context) to an LLM.

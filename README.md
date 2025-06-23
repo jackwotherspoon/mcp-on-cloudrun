@@ -1,5 +1,6 @@
 > [!NOTE] 
 > This sample has been added to the official Google Cloud Python docs samples repository.
+>
 > It can be found at [GoogleCloudPlaform/python-docs-samples/run/mcp-server](https://github.com/GoogleCloudPlatform/python-docs-samples/tree/main/run/mcp-server).
 >
 > For a step-by-step walkthrough read ["Build and Deploy a remote MCP Sever to Google Cloud Run"](https://cloud.google.com/blog/topics/developers-practitioners/build-and-deploy-a-remote-mcp-server-to-google-cloud-run-in-under-10-minutes/?e=48754805) Google Cloud blog post.

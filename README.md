@@ -3,6 +3,10 @@
 This repository contains a series of samples that demonstrate how to deploy a
 remote Model Context Protocol (MCP) server on Cloud Run.
 
+## Quick Start
+
+- [Deploy MCP Server](1-deploy-mcp-server/README.md)
+
 <img src="images/mcp-on-cloudrun.png" width="80%" alt="mcp-on-cloudrun">
 
 ## Background
@@ -53,3 +57,10 @@ Clone the repository
 ```bash
 git clone https://github.com/jackwotherspoon/mcp-on-cloudrun.git
 cd mcp-on-cloudrun
+```
+
+## Deploying the MCP Server :rocket:
+
+The [1-deploy-mcp-server](1-deploy-mcp-server) directory contains a sample that demonstrates how to deploy a simple MCP server to Cloud Run.
+
+Follow the instructions in the [1-deploy-mcp-server/README.md](1-deploy-mcp-server/README.md) file to deploy the MCP server.

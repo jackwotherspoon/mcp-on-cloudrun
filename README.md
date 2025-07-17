@@ -3,11 +3,11 @@
 This repository contains a series of samples that demonstrate how to deploy a
 remote Model Context Protocol (MCP) server on Cloud Run.
 
+<img src="images/mcp-on-cloudrun.png" width="80%" alt="mcp-on-cloudrun">
+
 ## Quick Start
 
 - [Deploy MCP Server](1-deploy-mcp-server/README.md)
-
-<img src="images/mcp-on-cloudrun.png" width="80%" alt="mcp-on-cloudrun">
 
 ## Background
 Anthropic's [Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction)
